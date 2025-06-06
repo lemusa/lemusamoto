@@ -1,173 +1,444 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LemusaMoto - Adventure Rides from Christchurch NZ</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LEMUSA MOTO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-        header {
-            background: #222;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>LEMUSA MOTO</h1>
+							<p>A free responsive site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> / <a href="https://html5up.net">HTML5 UP</a></p>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
+						</div>
+					</section>
 
-        nav {
-            background: #444;
-            padding: 10px;
-            text-align: center;
-        }
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>An Unexpected Journey</h2>
+						</header>
+						<div class="content">
+							<p>Casual adventure rider from Christchurch, NZ. Exploring back roads, riverbeds, and rugged tracks on two wheels. Documenting my rides and learning along the way. Check out the latest videos on YouTube.</p>
+							<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+						</div>
+					</section>
 
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>The Adventurer</h2>
+						</header>
+						<div class="content">
+							<p>I’m Sam, just an everyday adventure rider with a CF Moto 450MT and a Honda CRF250L. This site is a place to share my rides, favourite gear, and a bit of the story behind LemusaMoto. Based in Christchurch, NZ - exploring as much of this beautiful country as I can.</p>
+						</div>
+					</section>
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>The Gear</h2>
+						</header>
+						<div class="content">
+							<style>
+							  .gear-grid {
+								display: grid;
+								grid-template-columns: repeat(3, 1fr);
+								gap: 20px;
+								max-width: 1000px;
+								margin: 0 auto;
+								padding: 20px;
+							  }
 
-        .section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+							  .gear-column {
+								background: #f5f5f5;
+								padding: 15px;
+								border-radius: 5px;
+							  }
 
-        h2 {
-            color: #222;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-        }
+							  .gear-column h3 {
+								margin-top: 0;
+							  }
 
-        .gear-list, .bike-list {
-            list-style: none;
-            padding: 0;
-        }
+							  .gear-column ul {
+								list-style-type: none;
+								padding-left: 0;
+							  }
 
-        .gear-list li, .bike-list li {
-            padding: 5px 0;
-        }
+							  .gear-column ul li {
+								margin-bottom: 5px;
+							  }
+							</style>
 
-        footer {
-            background: #222;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
+							<div class="gear-grid">
+							  <div class="gear-column">
+								<h3>Bikes</h3>
+								<ul>
+								  <li>2024 CF Moto 450MT</li>
+								  <li>2014 Honda CRF250L</li>
+								</ul>
 
-        .youtube-button {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 12px 20px;
-            background: #cc0000;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-        }
+								<h3>Luggage</h3>
+								<ul>
+								  <li>Kriega</li>
+								  <li>Tucson</li>
+								</ul>
+							  </div>
 
-        .youtube-button:hover {
-            background: #e60000;
-        }
-    </style>
-</head>
-<body>
+							  <div class="gear-column">
+								<h3>Riding Gear</h3>
+								<ul>
+								  <li>Neo Tucson Jacket &amp; Pants</li>
+								  <li>LS2 MX436 Helmet</li>
+								  <li>Motowolf Gloves</li>
+								  <li>Alpinestar Tech-3 Enduro Boots</li>
+								</ul>
+							  </div>
 
-<header>
-    <h1>LemusaMoto</h1>
-    <p>Adventure Motorcycle Rides from Christchurch, New Zealand</p>
-</header>
+							  <div class="gear-column">
+								<h3>Tech</h3>
+								<ul>
+								  <li>GoPro Hero 8</li>
+								  <li>Cardo Packtalk Edge</li>
+								  <li>Garmin InReach Mini 2 (PLB)</li>
+								</ul>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#gear">Gear</a>
-    <a href="#rides">Rides & Maps</a>
-    <a href="#contact">Contact</a>
-</nav>
+								<h3>Navigation</h3>
+								<ul>
+								  <li><a href="https://adventureguide.co.nz" target="_blank">adventureguide.co.nz</a></li>
+								</ul>
+							  </div>
+							</div>
+						</div>
+					</section>
 
-<div class="section" id="home">
-    <h2>Home</h2>
-    <p>Casual adventure rider from Christchurch, NZ. Exploring back roads, riverbeds, and rugged tracks on two wheels. Documenting my rides and learning along the way. Check out the latest videos on YouTube.</p>
-    
-    <!-- Embed your YouTube channel or playlist -->
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed?listType=user_uploads&list=LemusaMoto" frameborder="0" allowfullscreen></iframe>
+				<!-- Elements -->
+				<!--
+					<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
 
-    <p><a class="youtube-button" href="https://www.youtube.com/@LemusaMoto" target="_blank">Subscribe on YouTube</a></p>
-</div>
+							<section>
+								<header>
+									<h3>Text</h3>
+								</header>
+								<div class="content">
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<hr />
+									<h5>Blockquote</h5>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h5>Preformatted</h5>
+									<pre><code>i = 0;
 
-<div class="section" id="about">
-    <h2>About</h2>
-    <p>I’m Sam, just an everyday adventure rider with a CF Moto 450MT and a Honda CRF250L. This site is a place to share my rides, favourite gear, and a bit of the story behind LemusaMoto. Based in Christchurch, NZ - exploring as much of this beautiful country as I can.</p>
-</div>
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
 
-<div class="section" id="gear">
-    <h2>Gear</h2>
-    <h3>Bikes</h3>
-    <ul class="bike-list">
-        <li>2024 CF Moto 450MT</li>
-        <li>2014 Honda CRF250L</li>
-    </ul>
+print 'Sorted in ' + i + ' iterations.';</code></pre>
+								</div>
+							</section>
 
-    <h3>Riding Gear</h3>
-    <ul class="gear-list">
-        <li>Neo Tucson Jacket & Pants</li>
-        <li>LS2 MX436 Helmet</li>
-        <li>Motowolf Gloves</li>
-        <li>Alpinestar Tech-3 Enduro Boots</li>
-    </ul>
+							<section>
+								<header>
+									<h3>Lists</h3>
+								</header>
+								<div class="content">
 
-    <h3>Luggage</h3>
-    <ul class="gear-list">
-        <li>Kriega</li>
-        <li>Tucson</li>
-    </ul>
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
 
-    <h3>Tech</h3>
-    <ul class="gear-list">
-        <li>GoPro Hero 8</li>
-        <li>Cardo Packtalk Edge</li>
-        <li>Garmin InReach Mini 2 (PLB)</li>
-    </ul>
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
 
-    <h3>Navigation</h3>
-    <p><a href="https://adventureguide.co.nz" target="_blank">adventureguide.co.nz</a></p>
-</div>
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
 
-<div class="section" id="rides">
-    <h2>Rides & Maps</h2>
-    <p>Coming soon: Maps, GPX downloads, and videos from recent rides!</p>
-</div>
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+							</section>
 
-<div class="section" id="contact">
-    <h2>Contact</h2>
-    <p>For questions, ride suggestions, or just to say hi, you can reach me via:</p>
-    <ul>
-        <li><a href="https://www.youtube.com/@LemusaMoto" target="_blank">YouTube Channel</a></li>
-        <li><a href="https://www.instagram.com/" target="_blank">Instagram (optional link)</a></li>
-        <li><a href="https://www.facebook.com/" target="_blank">Facebook Page (optional link)</a></li>
-    </ul>
-</div>
+							<section>
+								<header>
+									<h3>Table</h3>
+								</header>
+								<div class="content">
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
 
-<footer>
-    &copy; 2025 LemusaMoto. All Rights Reserved.
-</footer>
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</section>
 
-</body>
+							<section>
+								<header>
+									<h3>Buttons</h3>
+								</header>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Form</h3>
+								</header>
+								<div class="content">
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</div>
+							</section>
+
+						</div>
+					</section>
+				-->
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Get in touch</h2>
+						</header>
+						<div class="content">
+							<iframe width="100%" height="400" 
+    src="https://www.youtube.com/embed?listType=user_uploads&list=LemusaMoto" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+						</div>
+						<footer>
+							<ul class="items">
+								<li>
+									<h3>Email</h3>
+									<a href="#">lemusamoto@gmail.com</a>
+								</li>
+								<li>
+									<h3>Elsewhere</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; LEMUSA MOTO 2025. All rights reserved.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
