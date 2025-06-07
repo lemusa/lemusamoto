@@ -333,8 +333,8 @@ html {
 
 /* Hero Video */
 .video-container {
-	width: 100%;
-    max-width: 1000px; /* or whatever looks nice in your hero */
+	width: 90%;
+    max-width: 1500px; /* or whatever looks nice in your hero */
     margin: 0 auto;
     position: relative;
 }
