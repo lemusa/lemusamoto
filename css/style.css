@@ -121,7 +121,7 @@ html {
 		font-weight: 600;
 		letter-spacing: 0.175em;
 		line-height: 1.75;
-		margin: 0 0 0.5rem 0;
+		margin: 0 0 0 0;
 		text-transform: uppercase;
 	}
 
@@ -136,7 +136,7 @@ html {
 		font-weight: 700;
 		letter-spacing: -0.05em;
 		line-height: 1.1;
-		margin: 0 0 1.5rem 0;
+		margin: 0 0 0 0;
 		text-transform: none;
 	}
 
@@ -144,7 +144,7 @@ html {
 		font-family: 'Permanent Marker', cursive;
 		font-size: 1.25rem;
 		font-weight: 800;
-		margin: 0 0 2rem 0;
+		margin: 0 0 0 0;
 	}
 
 	h3 {
@@ -172,7 +172,7 @@ html {
 
 		h2 {
 			font-size: 1.25rem;
-			line-height: 1.7;
+			line-height: 1.1;
 		}
 
 		h3 {
@@ -283,7 +283,7 @@ html {
 }
 
 .hero-left {
-    background: #bbb;
+    background: #cbc19e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -368,18 +368,18 @@ main {
 .content-section {
     display: grid;
     grid-template-columns: 35% 65%;
-    min-height: 400px;
-    border-bottom: 10px solid #ddd;
+    min-height: 300px;
+    margin-bottom: 0px;
     background: #fff;
 }
 
 .content-left {
     background: #f0f0f0;
-    padding: 40px 20px;
+    padding: 20px 30px;
     display: flex;
     align-items: right;
     justify-content: right;
-    border-right: 1px solid #ddd;
+    border-right: 0px solid #ddd;
 	flex-direction: column;
 }
 
@@ -389,7 +389,7 @@ main {
 }
 
 .content-right {
-    padding: 40px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -525,7 +525,7 @@ ul.icons li a:hover {
 	}
 
 		table tbody tr {
-			border: solid 1px rgba(144, 144, 144, 0.25);
+			border: solid 0px rgba(144, 144, 144, 0.25);
 			border-left: 0;
 			border-right: 0;
 		}
