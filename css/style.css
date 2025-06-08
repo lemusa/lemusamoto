@@ -325,6 +325,13 @@ html, body {
         display: flex;
         justify-content: center;
     }
+
+	.bike-info {
+		flex: 1 1 auto !important;
+		flex-basis: auto !important; /* override the 400px */
+		min-height: 0 !important;    /* make absolutely sure */
+		padding: 10px; /* keep your padding */
+	}
 	
 }
 
@@ -710,7 +717,7 @@ padding: 10px 0;
 }
 
 .brand-track img {
-    height: 60px;
+    height: 40px;
     margin: 0 20px;
     flex-shrink: 0;
 }
@@ -734,21 +741,19 @@ padding: 10px 0;
 }
 
 .bike-image {
-    flex: 0 0 250px;
+    flex: 0 0 180px;
     padding: 10px;
 }
 
 .bike-info {
-    flex: 1 1 400px;
-	font-size: 0.8em;
+    flex: 1 1 500px;
+	font-size: 0.85em;
     padding: 10px;
 }
 
 .bike-specs {
     flex: 1 1 150px;
-    margin-top: 40px;
 	padding: 10px 10px 10px 20px;
-    font-size: 0.8em;
     color: #555;
 }
 
@@ -767,6 +772,7 @@ padding: 10px 0;
 }
 .gear-item .gear-image {
     flex: 0 0 120px; /* fixed width for images */
+	margin-left: 20px;
     max-width: 120px;
 }
 
