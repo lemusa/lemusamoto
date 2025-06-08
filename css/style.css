@@ -281,17 +281,7 @@ html, body {
 
 		}
 
-/* Section Snapping */
-section {
-    min-height: 100vh; /* allows it to grow on tall content */
-    scroll-snap-align: start;
-}
-
-body {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
-
+/* Mobile */
 @media (max-width: 768px) {
     .hero {
         display: block !important;
@@ -320,6 +310,32 @@ body {
     .content-footer {
         width: 100%;
     }
+	
+	.bike-card {
+		flex-direction: column;
+    }
+	
+	.gear-item {
+    flex-direction: column;
+    }
+
+    .gear-image,
+    .gear-info,
+    .gear-tech {
+        flex: 1 1 100%;
+        padding: 10px 0;
+    }
+}
+
+/* Section Snapping */
+section {
+    min-height: 100vh; /* allows it to grow on tall content */
+    scroll-snap-align: start;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 /* Hero Section */
@@ -473,7 +489,6 @@ body {
 }
 
 /* Icons */
-
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -511,7 +526,6 @@ ul.icons li a:hover {
 }
 
 /* Feature Icons */
-
 	ul.feature-icons {
 		display: flex;
 		flex-wrap: wrap;
@@ -569,7 +583,6 @@ ul.icons li a:hover {
 		}
 
 /* Table */
-
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -637,7 +650,6 @@ ul.icons li a:hover {
 			}
 
 /* Arrow */
-
 .moto-arrow a {
     display: inline-block;
     width: 4rem;
@@ -682,7 +694,6 @@ ul.icons li a:hover {
 		}
 
 /* BRAND CAROUSEL */
-
 .brand-carousel {
 overflow: hidden;
 position: relative;
@@ -710,4 +721,57 @@ padding: 10px 0;
     100% {
         transform: translateX(-50%);
     }
+}
+
+/* Bike Section */
+.bike-card {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.bike-image {
+    flex: 0 0 250px;
+    padding: 10px;
+}
+
+.bike-info {
+    flex: 1 1 300px;
+    padding: 10px;
+}
+
+.bike-specs {
+    flex: 1 1 200px;
+    padding: 10px;
+    font-size: 0.85em;
+    color: #555;
+}
+
+/* Gear Section */
+.gear-item {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.gear-image {
+    flex: 0 0 200px;
+    padding: 10px;
+}
+
+.gear-info {
+    flex: 1 1 300px;
+    padding: 10px;
+	font-size: 0.85em;
+}
+
+.gear-tech {
+    flex: 1 1 300px;
+    padding: 10px;
+    font-size: 0.85em;
+    color: #555;
 }
