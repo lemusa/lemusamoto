@@ -35,6 +35,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 /* Typography */
 
 	html {
@@ -76,6 +81,8 @@ html {
 	body {
 		background-color: #ffffff;
 		color: #000000;
+		max-width: 1920px;
+		margin: 0 auto;		
 	}
 
 	body, input, select, textarea {
@@ -276,11 +283,8 @@ html {
 
 /* Section Snapping */
 section {
-    height: 100vh; /* full screen height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    min-height: 100vh; /* allows it to grow on tall content */
+    scroll-snap-align: start;
 }
 
 body {
@@ -288,15 +292,43 @@ body {
     overflow-y: scroll;
 }
 
-section {
-    scroll-snap-align: start;
+@media (max-width: 768px) {
+    .hero {
+        display: block !important;
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    .content-section {
+        display: block !important;
+    }
+
+    .content-left {
+        display: block !important;
+        height: auto !important;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content-right {
+        display: block !important;
+        height: auto !important;
+        padding: 20px;
+    }
+
+    .content-footer {
+        width: 100%;
+    }
 }
 
 /* Hero Section */
 .hero {
     display: grid;
     grid-template-columns: 35% 65%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    margin: 0 auto;
 }
 
 .hero-left {
@@ -389,17 +421,18 @@ section {
 .content-section {
     display: grid;
     grid-template-columns: 35% 65%;
-    height: 100vh;
+	min-height: 100vh;
+    height: auto;
     margin: 0px;
     background: #fff;
 }
 
 .content-left {
-    height: 100vh;
+    height: auto; /* allow left column to match content height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* THIS IS THE KEY */
-    align-items: flex-end; /* or flex-start or center as you like */
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 20px;
     background-color: #f0f0f0;
     border-right: 0px solid #ddd;
@@ -437,21 +470,6 @@ section {
 .content-footer {
     flex-shrink: 0; /* prevents it being squashed */
     width: 100%; /* optional - makes it full width */
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-    .hero {
-        grid-template-columns: 1fr;
-    }
-    .content-section {
-        grid-template-columns: 1fr;
-    }
-    .content-left {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-    }
 }
 
 /* Icons */
