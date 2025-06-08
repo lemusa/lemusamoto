@@ -274,6 +274,23 @@ html {
 
 		}
 
+/* Section Snapping */
+section {
+    height: 100vh; /* full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    scroll-snap-align: start;
+}
 
 /* Hero Section */
 .hero {
@@ -289,6 +306,7 @@ html {
     align-items: center;
     justify-content: center;
     padding: 20px;
+	height: 100vh;
 }
 
 .hero-left .logo {
@@ -324,6 +342,9 @@ html {
 	background-image: url('../images/hero.png'); 
     background-size: cover;
     background-position: center;
+	height: 100vh;          /* add this */
+    width: 100%;            /* optional, ensures full width */
+    min-height: 100vh;      /* optional but helps on some browsers */
 }
 
 .hero-right iframe {
@@ -360,7 +381,7 @@ html {
 }
 
 /* Content Sections */
-main {
+.main {
     display: flex;
     flex-direction: column;
 }
@@ -368,37 +389,54 @@ main {
 .content-section {
     display: grid;
     grid-template-columns: 35% 65%;
-    min-height: 300px;
-    margin-bottom: 0px;
+    height: 100vh;
+    margin: 0px;
     background: #fff;
 }
 
 .content-left {
-    background: #f0f0f0;
-    padding: 20px 30px;
+    height: 100vh;
     display: flex;
-    align-items: right;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: space-between; /* THIS IS THE KEY */
+    align-items: flex-end; /* or flex-start or center as you like */
+    padding: 20px;
+    background-color: #f0f0f0;
     border-right: 0px solid #ddd;
-	flex-direction: column;
 }
 
 .content-left h2 {
-    font-size: 2em;
+    margin-top: auto;
+	margin-bottom: auto;
+	font-size: 2em;
     text-align: right;
 }
 
 .content-right {
-    padding: 0px 20px;
+    padding: 20px; /* already set, leave it */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+#third .content-right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%; /* force it to fill the section */
 }
 
 .content-right p {
     /*max-width: 800px;*/
     text-align: left;
     font-size: 0.9em;
+}
+
+.content-footer {
+    flex-shrink: 0; /* prevents it being squashed */
+    width: 100%; /* optional - makes it full width */
 }
 
 /* Responsive */
@@ -642,7 +680,7 @@ padding: 10px 0;
 }
 
 .brand-track img {
-    height: 80px;
+    height: 60px;
     margin: 0 20px;
     flex-shrink: 0;
 }
