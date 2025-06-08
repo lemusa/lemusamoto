@@ -314,17 +314,18 @@ html, body {
 	.bike-card {
 		flex-direction: column;
     }
-	
-	.gear-item {
-    flex-direction: column;
+
+    .gear-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
     }
 
-    .gear-image,
-    .gear-info,
-    .gear-tech {
-        flex: 1 1 100%;
-        padding: 10px 0;
+    .gear-item .gear-image {
+        display: flex;
+        justify-content: center;
     }
+	
 }
 
 /* Section Snapping */
@@ -738,40 +739,54 @@ padding: 10px 0;
 }
 
 .bike-info {
-    flex: 1 1 300px;
+    flex: 1 1 400px;
+	font-size: 0.8em;
     padding: 10px;
 }
 
 .bike-specs {
-    flex: 1 1 200px;
-    padding: 10px;
-    font-size: 0.85em;
+    flex: 1 1 150px;
+    margin-top: 40px;
+	padding: 10px 10px 10px 20px;
+    font-size: 0.8em;
     color: #555;
 }
 
 /* Gear Section */
 .gear-item {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* so it collapses nicely on mobile */
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%; /* key! makes it fill .content-right */
     border-bottom: 1px solid #ccc;
-    padding: 10px;
+    padding: 10px 0;
     margin-bottom: 10px;
+    gap: 20px; /* spacing between columns */
+    box-sizing: border-box; /* safe */
+}
+.gear-item .gear-image {
+    flex: 0 0 120px; /* fixed width for images */
+    max-width: 120px;
 }
 
-.gear-image {
-    flex: 0 0 200px;
+.gear-item .gear-info {
+    flex: 1; /* this is the key! make it take available space */
+    min-width: 200px;
     padding: 10px;
+    font-size: 0.9em;
+    box-sizing: border-box;
 }
 
-.gear-info {
-    flex: 1 1 300px;
-    padding: 10px;
-	font-size: 0.85em;
+.gear-item .gear-image:nth-of-type(2) {
+    flex: 0 0 120px; /* second image fixed too */
+    max-width: 120px;
 }
 
-.gear-tech {
-    flex: 1 1 300px;
+.gear-item .gear-tech {
+    flex: 1; /* again: take remaining space */
+    min-width: 200px;
     padding: 10px;
-    font-size: 0.85em;
-    color: #555;
+    font-size: 0.9em;
+    box-sizing: border-box;
 }
